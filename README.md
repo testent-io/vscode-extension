@@ -20,17 +20,21 @@ It creates the unit tests for [Jest](https://jestjs.io/)-framework but later on 
 Currently only Typescript is supported. Javascript will be supported later on. You need to have the Typescript types installed/available for the packages used in code at the moment for the test generation to work.
 
 ## Note
-At the moment **Testent** is a proof of concept to see if this kind of unit test generation works. So expect sharp corners, some bugs and breaking changes.
+This extension is in it's early stage so please expect some bumps and bugs on your way using it.ges.
 
 <br/><br/>
 
 # VSCode extension at work
-## Generating unit tests
+## Automatically writing unit tests
 
-Testent generates unit tests for functions from inputs you give. The function you want to test is executed in your environment with the given inputs. This means that the environment used by the function needs to be reachable.
+Testent automatically writes unit tests for functions from inputs you give. The function you want to test is executed in your environment with the given inputs. This means that the environment used by the function needs to be reachable.
 
 <p align="center">
-  <img src="./images/docs/testent-test-generation-preview.gif" alt="Preview of Testent generating unit tests" />
+  <picture>
+      <source srcset="./images/docs/testent-automated-unit-test-writing-preview.webp" type="image/webp">
+      <source srcset="./images/docs/testent-automated-unit-test-writing-preview.gif" type="image/gif">
+      <img src="./images/docs/testent-automated-unit-test-writing-preview.gif" alt="Preview of Testent automatically writing unit tests">
+  </picture>
 </p>
 
 - The `createInternalFunctionExpects_X` option let's you choose if the internal logics of the function you test should be tested. If enabled `expect`-statements will be created for internal logics
